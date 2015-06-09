@@ -1,0 +1,9 @@
+{
+  "name": "logstash-forwarder",
+  "maintainer": "Ride Share Market",
+  "maintainer_email": "systemsadmin@ridesharemarket.com",
+  "license": "GPL v2",
+  "description": "Docker logstash-forwarder image",
+  "long_description": "Docker logstash-forwarder image",
+  "version": "1.0.0"
+}
