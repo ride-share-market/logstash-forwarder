@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<project name="Ride Share Market logstash-forwarder" default="main" basedir=".">
+
+    <target name="main">
+        <exec executable="cat">
+            <arg value="metadata.json"/>
+        </exec>
+    </target>
+
+</project>
