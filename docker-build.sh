@@ -2,7 +2,7 @@
 
 set -e
 
-PRIVATE_REGISTRY=192.168.33.10:5000
+PRIVATE_REGISTRY=registry.ridesharemarket.com:5000
 
 CONTAINER_OWNER=ride-share-market
 
