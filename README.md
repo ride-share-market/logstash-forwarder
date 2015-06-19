@@ -1,4 +1,19 @@
-1)
+# Logstash Forwarder Agent
+
+Logstash Forwarder is a Go implementation of Logstash Lumberjack forwarder.
+
+The docker container will mount TLS keys from the host OS.
+
+## Install
+
+- `git clone git@github.com:ride-share-market/logstash-forwarder.git`
+- `cd logstash-forwarder && git checkout develop`
+
+## Create TLS keys.
+
+These keys are stored in the repo secrets file, but this is how you'd initially create them.
+
+1) On the Docker host machine
 
 # certificates: /etc/pki/tls/certs/logstash-forwarder/
 # keys: /etc/pki/tls/private/logstash-forwarder/
@@ -14,7 +29,7 @@ sudo mv rsm-logstash-forwarder.key /etc/pki/tls/private/logstash-forwarder/
 
 3)
 
-# Logstash
+# Logstash Configuration (this is in the RSM logstash cookbook)
 
 input {
   lumberjack {
@@ -27,14 +42,9 @@ input {
 
 4)
 
-# Logstash-Forwarder
+## Deploy on local VM.
 
-git clone git://github.com/elasticsearch/logstash-forwarder.git
-cd logstash-forwarder
-go build -o logstash-forwarder
-
-
-## Deploy
+# TODO: clean up these notes.
 
 sudo docker pull 192.168.33.10:5000/rudijs/rsm-logstash-forwarder:0.0.1
 
