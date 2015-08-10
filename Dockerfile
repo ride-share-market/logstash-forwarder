@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER Ride Share Market "systemsadmin@ridesharemarket.com"
 
 # APT cache
-ENV APT_REFRESHED_AT 2015-06-17.1
+ENV APT_REFRESHED_AT 2015-08-10.1
 RUN apt-get -yqq update
 
 WORKDIR /root
